@@ -1,0 +1,32 @@
+Remove duplicates from a list.
+a = [1,1,2,3,4,4,5,5,6,7]
+a = set(a)
+print(a)
+
+To replace the last value of tuples in a list.
+
+tuple = (1,2,3,4,5,6)
+tuple = list(tuple)
+tuple[5] = 8
+print(tuple)
+
+Convert a tuple of string values to a tuple of integer values
+
+a = ("7","8","9")
+e = ()
+for i in a:
+  e+= (int(i),)
+  
+print(e)
+
+finding all the unique words and count the frequency of occurrence from a given list of strings.
+
+def word_count(words):
+    word_set = set(words)
+    word_counts = {}
+    for word in word_set:
+        word_counts[word] = words.count(word)
+    return word_counts
+
+words = ['Red', 'Green', 'Red', 'Blue', 'Red', 'Red', 'Green']
+print(word_count(words))
